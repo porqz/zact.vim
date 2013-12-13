@@ -1,4 +1,1 @@
-zact.vim
-========
-
-Zoom active Vim window
+# zact.vim — zoom active window
