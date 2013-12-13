@@ -15,7 +15,9 @@ function! s:zoom_active_window()
     let l:max_window_width = &columns
     let l:max_window_height = &lines
 
+    " TODO: Make it optionally
     call s:set_window_width(l:active_window, l:max_window_width / 1.618)
+    call s:set_window_height(l:active_window, l:max_window_height)
 endfunction
 
 au WinEnter,BufEnter * call <SID>zoom_active_window()
